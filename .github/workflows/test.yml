@@ -6,7 +6,7 @@ jobs:
   aporte: 
     runs-on: ubuntu-latest
    
-    step: 
+    steps: 
       name: Hola Mundo
       run: echo "Hola mundo"
       
