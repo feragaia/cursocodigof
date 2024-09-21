@@ -1,7 +1,13 @@
 name : Hola mundo
-
-on: [push, pull_request]
-
+# de esta forma, se ejecutan paralelamente
+# on: [push, pull_request]
+on: 
+  push: 
+     branches:
+      - main
+  pull_request: 
+     branches:
+      - main
 jobs:
   hola: 
     runs-on: ubuntu-latest
