@@ -1,6 +1,6 @@
 name : Hola mundo
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   hola: 
@@ -22,7 +22,7 @@ jobs:
   other:
     runs-on: ubuntu-latest
     needs: [hola]
-    
+
     steps: 
       - name: LS
         run: ls -al
