@@ -12,5 +12,5 @@ jobs:
         
         - name: lista
           run: ls -al
-               chmod 755 script.sh
+               sudo chmod 755 script.sh
                ./script.sh
